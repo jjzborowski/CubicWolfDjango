@@ -1,9 +1,10 @@
 from django.db import models
 
 
-class Project(models.Model):
+class Course(models.Model):
     title = models.CharField(max_length=200)
-    date = models.DateField()
+    desc = models.TextField()
+    duration = models.TimeField()
 
     def __str__(self):
         return self.title
