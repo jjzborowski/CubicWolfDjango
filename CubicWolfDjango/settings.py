@@ -39,7 +39,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'cubic-wolf-django.urls'
+ROOT_URLCONF = 'CubicWolfDjango.urls'
 
 TEMPLATES = [
     {
@@ -57,7 +57,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'cubic-wolf-django.wsgi.application'
+WSGI_APPLICATION = 'CubicWolfDjango.wsgi.application'
 
 
 # Database
