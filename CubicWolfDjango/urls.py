@@ -7,5 +7,6 @@ course_resource = CourseResource()
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^api/', include(project_resource.urls)),
     url(r'^api/', include(course_resource.urls)),
 ]
