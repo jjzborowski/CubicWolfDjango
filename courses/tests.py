@@ -1,6 +1,12 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from django.test import TestCase
+from courses.models import Course
 
-# Create your tests here.
+
+class CourseTesting(TestCase):
+    fixtures = ['fixtures.json']
+
+    def test_course_name(self):
+        course = Course.objects.all().first()
+        expected = course.title
+        result = str(course)
+        self.assertEqual(expected, result)
