@@ -11,5 +11,8 @@ ProjectAPI = {
         'put': 'update',
         'patch': 'partial_update',
         'delete': 'destroy'
+    }),
+    'test': ProjectViewSet.as_view({
+        'get': 'test'
     })
 }
